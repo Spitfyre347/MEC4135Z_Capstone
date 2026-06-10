@@ -6,3 +6,6 @@
 *.fdb_latexmk
 *.fls
 *.pdf
+*.bcf
+*.run.xml
+Data_Mikael/
