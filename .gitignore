@@ -9,3 +9,4 @@
 *.bcf
 *.run.xml
 Data_Mikael/
+!Master_Data.pdf
