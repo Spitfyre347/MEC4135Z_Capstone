@@ -66,6 +66,38 @@ Finally, two tests used a crosshead instead of a more-accurate extensometer to m
 \subsubsection{Included Tests}
 With the exclusions above, we retain exactly 5 tests for each sample, and thus \textbf{we will use 6 repeat tests} for each sample in our analysis. This is done to utilize the fact that every sample had precisely 3 invalid tests, and 5 valid ones, giving us a large enough sample size to perform an accurate and precise analysis. To exclude any tests, such as only considering 4 for each sample, would be to needlessly remove valid data for no reason, and would generally decrease the quality of our analysis. As such, we use the maximum number of test runs available to us. This includes tests \textbf{1, 3, 4, 6, 8} for \textit{A-HM}, \textbf{2, 3, 5, 7, 8} for \textit{A-HT1}, \textbf{1, 2, 5, 6, 8} for \textit{A-HT2} and \textbf{2, 3, 5, 6, 7} for \textit{W-HT2}. 
 
+
+\subsubsection{Statistical Decisions}
+To arrive at the results shown in the section below, a number of statistical decisions were made with regards to the reporting and representation of data. The most obvious of these is the test exclusions above, however with the tests narrowed down, several additional decisions were made that need be mentioned. Additional graphs, such as those aiding in calculations, are given in the appendix, so as to not clutter the other, more-important graphical results. All non-additional stress strain curves, specifically those which showcase the multiple tests runs, are shown in portrait orientations, so as to display any deviations in values which may have occurred within the runs. Landscape displays of these graphs would show the curves as a single thick line, making them less informative overall. Finally, bar graphs were chosen to compare various properties of the heat treatments, and, in particular, yield strength and ultimate tensile strength were chosen to be displayed on the same graph, so as to show comparisons between values as well, i.e. for a single heat treatment.
+
+
+\subsection{Hardness Tests}
+Moving on to the hardness tests, \textbf{ASTME92} was selected as the most appropriate standard to adhere to, as it outlines test methods for Vickers Hardness of metallic materials. The tests performed on the Inconel 718 samples fits the standards given at \textit{ASTM.org} \cite{ASTME92}.
+
+\subsubsection{Excluded Tests}
+As before, tests with inconsistencies or errors are excluded from this analysis. For hardness tests, all repeats were consistent across the samples tested, meaning the same test(s) will be excluded from each heat treatment sample. As before, the test protocols are outlined at the resource linked in the appendix (Section 7).
+
+Clearly \textbf{Test 2} is invalid, since non-parallel specimens were used, in violation of the selected standard. Furthermore, \textbf{Test 3} featured indentation spacing of only $1 \times$ the diagonal length, and thus need also be excluded.
+
+\textbf{Test 4} featured only 15 repeats instead of the 30 repeats featured in the others, but was decided to be included, 
+
+\subsubsection{Included Tests}
+
+\subsubsection{Statistical Decisions}
+
+
+
+\subsection{Fracture Toughness Tests}
+
+\subsubsection{Excluded Tests}
+
+
+\subsubsection{Included Tests}
+
+\subsubsection{Statistical Decisions}
+
+
+\newpage
 \section{Results}
 
 \subsection{Tensile Tests}
@@ -79,7 +111,43 @@ Thereafter, we may begin arriving at several more results through computation. W
 
 $$\ln \sigma_{true} = \ln K + n \ln {\varepsilon_t} $$
 
-We begin by averaging our true stress/strain curves (Figs. \ref{fig:tss1}-\ref{fig:tss4}) across all 5 tests to obtain a single curve which we will use to compute our coefficients. We then plot subfunctions of this true stress/strain curve for each sample, using a log-log scale (in particular, $\ln-\ln$), and specific to the plastic region. These are shown in the appendix (Section 7, Figs. ), and we obtain our desired linearity and arrive at the following results for each sample.
+We begin by averaging our true stress/strain curves (Figs. \ref{fig:tss1}-\ref{fig:tss4}) across all 5 tests to obtain a single curve which we will use to compute our coefficients. We then plot subfunctions of this true stress/strain curve for each sample, using a log-log scale (in particular, $\ln-\ln$), and specific to the plastic region. These are shown in the appendix (Section 7, Figs. \ref{fig:ltss1}-\ref{fig:ltss4}), and we obtain our desired linearity and arrive at the following results for each sample.
+
+\begin{table}[H]
+	\centering
+	\caption{Strength Coefficient $K$ and Strain Hardening Exponent $n$ for Heat Treatment Samples}
+	\vspace{0.5em}
+	\label{tab:hollomon}
+	\begin{tabular}{lcc}
+		\hline
+		\textbf{Sample} & \textbf{Strength Coefficient,} $K$ & \textbf{Strain Hardening Exponent,} $n$ \\
+		\hline
+		AM718-HM  & $\exp(7.2682)$ = \textbf{1433.97} & \textbf{0.2587} \\
+		AM718-HT1 & $\exp(7.7474)$ = \textbf{2315.54} & \textbf{0.1922} \\
+		AM718-HT2 & $\exp(7.6904)$ = \textbf{2187.25} & \textbf{0.1849} \\
+		W718-HT2  & $\exp(7.4001)$ = \textbf{1636.15} & \textbf{0.1509} \\
+		\hline
+	\end{tabular}
+\end{table}
+
+We can see these values shown in the bar graphs below.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/bar}
+		\caption{Bar Graph showing Strength Coefficients, $K$, for Heat Treatment Samples}
+		\label{fig:bar}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/bar2}
+		\caption{Bar Graph showing Strain Hardening Exponents, $n$, for Heat Treatment Samples}
+		\label{fig:bar2}
+	\end{minipage}
+\end{figure}
 
 
 \begin{figure}[H]
@@ -148,6 +216,55 @@ We begin by averaging our true stress/strain curves (Figs. \ref{fig:tss1}-\ref{f
 	\end{minipage}
 \end{figure}
 
+Moving on, we may also compute the \textbf{yield strength, $\sigma_{ys}$, ultimate tensile strength, $\sigma_{UTS}$, elongation to failure, $\varepsilon_{fail}$} and \textbf{Young's modulus} for each heat treatment. To calculate these, we begin by averaging our engineering stress/strain values for each sample, to obtain a single curve. Thereafter, we plot a subfunction of each of these curves, specifically limited to the elastic region, so as to compute \textbf{elastic} (i.e. Young's) \textbf{modulus} and the yield strength, which are, respectively, the gradient and $y_{max}$. These plots are given in the appendix, as with those prior (Section 7, Figs. \ref{fig:ess1}-\ref{fig:ess4})
+
+The other values are more straightforward, with $\sigma_{UTS}$ and $\varepsilon_{fail}$ given by our $y$ and $x$ maxima, respectively (of the entire stress/strain curve). We arrive at the table below.
+
+\begin{table}[H]
+	\centering
+	\caption{Table showing Mechanical Properties for Heat Treatment Samples}
+	\vspace{0.5em}
+	\label{tab:mechprops}
+	\begin{tabular}{lcccc}
+		\hline
+		\textbf{Sample} & \textbf{$\sigma_{ys}$ (MPa)} & \textbf{E (GPa)} & \textbf{$\sigma_{UTS}$ (MPa)} & \textbf{$\varepsilon_{fail}$} \\
+		\hline
+		AM718-HM  & 290.3 & 131.00 & 827.4  & 66.66\% \\
+		AM718-HT1 & 732.3 & 246.59 & 1368.0 & 21.29\% \\
+		AM718-HT2 & 698.0 & 235.29 & 1320.9 & 23.50\% \\
+		W718-HT2  & 640.7 & 212.91 & 1067.1 & 19.69\% \\
+		\hline
+	\end{tabular}
+\end{table}
+
+We represent these values using the bar graphs below, allowing us to visually compare the mechanical properties of each heat treatment.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ysuts}
+	\caption{Bar Graph showing Yield and Ultimate Tensile Strength Values for Heat Treatment Samples}
+	\label{fig:ysuts}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{media/em}
+		\caption{Bar Graph showing Elastic Moduli for Heat Treatment Samples}
+		\label{fig:em}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{media/ebreak}
+		\caption{Bar Graph showing Elongation at Break for Heat Treatment Samples}
+		\label{fig:ebreak}
+	\end{minipage}
+\end{figure}
+
+
+
 \section{Discussion}
 
 \section{Conclusions}
@@ -160,11 +277,69 @@ We begin by averaging our true stress/strain curves (Figs. \ref{fig:tss1}-\ref{f
 
 \section{Appendix}
 
-All data pertaining to the heat-treatments and mechanical tests, performed by the external consultancy, is available \href{https://spitfyre347.github.io/MEC4135Z_Capstone/Master_Data.pdf}{here} in PDF form, hosted on a \textit{Github Pages} site. This is the raw data as received from the consultants, collated into a single PDF file. 
+All data pertaining to the heat-treatments and mechanical tests, performed by the external consultancy, is available \href{https://spitfyre347.github.io/MEC4135Z_Capstone/Master_Data.csv}{here} in CSV format, hosted on a \textit{Github Pages} site. This is the raw data as received from the consultants, collated into a single PDF file. 
 
 All protocols outlined by the consultancy used to obtain the results above are also available, on the same site, at the web address \href{https://spitfyre347.github.io/MEC4135Z_Capstone/Test_Protocols.pdf}{here}. These have been similarly collated into a single PDF.
 
+The logarithmic true stress/strain curves for the plastic region of each sample, for determination of the strength and strain hardening coefficients, are shown below.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ltss1}
+	\caption{Logarithmic True Stress vs. True Strain for the plastic region of Sample AM718-HM}
+	\label{fig:ltss1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ltss2}
+	\caption{Logarithmic True Stress vs. True Strain for the plastic region of Sample AM718-HT1}
+	\label{fig:ltss2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ltss3}
+	\caption{Logarithmic True Stress vs. True Strain for the plastic region of Sample AM718-HT2}
+	\label{fig:ltss3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ltss4}
+	\caption{Logarithmic True Stress vs. True Strain for the plastic region of Sample W718-HT2}
+	\label{fig:ltss4}
+\end{figure}
+
+Our engineering stress/strain curves, constrained to the elastic region, are also given below for each sample.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ess1}
+	\caption{Engineering Stress vs. Engineering Strain for the elastic region of Sample AM718-HM}
+	\label{fig:ess1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ess2}
+	\caption{Engineering Stress vs. Engineering Strain for the elastic region of Sample AM718-HT1}
+	\label{fig:ess2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ess3}
+	\caption{Engineering Stress vs. Engineering Strain for the elastic region of Sample AM718-HT2}
+	\label{fig:ess3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ess4}
+	\caption{Engineering Stress vs. Engineering Strain for the elastic region of Sample W718-HT2}
+	\label{fig:ess4}
+\end{figure}
 
 
 \end{document}          
