@@ -3,9 +3,10 @@
 % Title Page
 \title{\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\linewidth]{media/uctlogo}
+		\includegraphics[width=0.5\linewidth]{media/uctlogo}
 		\label{fig:uctlogo}
 	\end{figure} 
+	\vspace{1em}
 	
 	MEC4135Z $\mid$ Final Capstone Project}
 \author{Mikael Christodoulides \quad CHRMIK001 \quad 1947634 \\[2em] MEC4135Z Final Exam \quad CME, UCT \\[1em] Total Marks: 110}
@@ -14,6 +15,7 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage[margin=2.5cm]{geometry}
 
 
 \usepackage[backend=biber]{biblatex}
@@ -27,6 +29,8 @@
 
 \maketitle
 
+\newpage
+
 \section{Introduction}
 
 This reports serves to outline the effectiveness of implementing a metal additive manufacturing (MAM) protocol for high performance aerospace components for  $AeroInc^{\text{\textregistered}}$ using Inconel 718.
@@ -35,7 +39,114 @@ This reports serves to outline the effectiveness of implementing a metal additiv
 
 \section{Methodology}
 
+The methodology used throughout this project, as reported by the external consultancy by whom the tests were performed, is outlined below. All specific protocols used throughout the respective tests are available at the resource linked in the appendix (Section 7). All facts about testing procedures are outlined in this document.
+
+\subsection{Tensile Tests}
+Starting with the tensile tests for the material states, \textbf{ASTM E8/8M} was selected as the most appropriate standard to adhere to for testing. As per the outline from \textit{ASTM.org} \cite{ASTME8}, this standard governs the tension testing of metallic materials, and fits the consultants' protocol descriptions.
+
+For each sample, shown in the table below, 8 repeat tensile tests were performed.  From this point on, each sample will be referred to using just the first letter and last letters of their designations after the hyphen (i.e. ``\textit{W-HT2}" for ``\textit{WR718-HT2}").
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{media/table}
+	\caption{List of heat-treated samples for Inconel 718, and their descriptions.}
+	\label{fig:table}
+\end{figure}
+
+\subsubsection{Excluded Tests}
+
+Of these tests, several need be excluded, which we'll outline below. For \textit{A-HM}, \textbf{Test 7} is excluded as its strain rate of $10mm/min$ deviates from the otherwise-standard rate of $1mm/min$. Similarly, we exclude \textbf{Test 6} for \textit{A-HT1} and \textbf{Test 1} for \textit{W-HT2}, both for the same reason. 
+
+One test also included measurements made with a ruler rather than a caliper, and thus needs to be excluded. This is \textbf{Test 4} for \textit{A-HT1}.
+
+In terms of issues preceding/during testing, we exclude \textit{A-HM} \textbf{Test 2} since the specimen had a rough surface on the gauge region prior to testing, and \textbf{Test 5} since the extensometer was not calibrated, and for the same reason, \textbf{Test 7} for \textit{A-HT2}. For \textit{A-HT1}, we exclude \textbf{Test 1} since the specimen was not clamped vertically between the grips during testing. For \textit{A-HT2}, we exclude \textbf{Test 4}, since the specimen fracture occurred outside of the gauge region, and \textbf{Test 7} of \textit{W-HT2} for the same reason. 
+
+Finally, two tests used a crosshead instead of a more-accurate extensometer to measure displacement, namely \textbf{Test 3} for \textit{A-HT2} and \textbf{Test 4} for \textit{W-HT2}. We exclude these as well.
+
+\subsubsection{Included Tests}
+With the exclusions above, we retain exactly 5 tests for each sample, and thus \textbf{we will use 6 repeat tests} for each sample in our analysis. This is done to utilize the fact that every sample had precisely 3 invalid tests, and 5 valid ones, giving us a large enough sample size to perform an accurate and precise analysis. To exclude any tests, such as only considering 4 for each sample, would be to needlessly remove valid data for no reason, and would generally decrease the quality of our analysis. As such, we use the maximum number of test runs available to us. This includes tests \textbf{1, 3, 4, 6, 8} for \textit{A-HM}, \textbf{2, 3, 5, 7, 8} for \textit{A-HT1}, \textbf{1, 2, 5, 6, 8} for \textit{A-HT2} and \textbf{2, 3, 5, 6, 7} for \textit{W-HT2}. 
+
 \section{Results}
+
+\subsection{Tensile Tests}
+For our tensile tests, we may obtain \textbf{engineering stress/strain curves} for each of our 4 samples, shown on the next page.
+
+Following this, we may, too, compute \textbf{true stress/strain curves} for the 4 samples, shown on the page following on (i.e. page X). We utilize the two equations shown below:
+
+$$\sigma_{true} = \sigma_{eng}(1+\varepsilon_{eng})\quad \quad \quad \quad \varepsilon_{true} = \ln(1+\varepsilon_{eng}) $$
+
+Thereafter, we may begin arriving at several more results through computation. We begin by determining the \textbf{coefficients of strength and strain hardening}. Using the equation below, which applies to the region of \textbf{plastic deformation} for our graph, we may compute these values as, respectively, the intercept and gradient of a logarithmic true stress/strain curve (specific to the plastic region).
+
+$$\ln \sigma_{true} = \ln K + n \ln {\varepsilon_t} $$
+
+We begin by averaging our true stress/strain curves (Figs. \ref{fig:tss1}-\ref{fig:tss4}) across all 5 tests to obtain a single curve which we will use to compute our coefficients. We then plot subfunctions of this true stress/strain curve for each sample, using a log-log scale (in particular, $\ln-\ln$), and specific to the plastic region. These are shown in the appendix (Section 7, Figs. ), and we obtain our desired linearity and arrive at the following results for each sample.
+
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/ss1}
+		\caption{Engineering Stress vs. Engineering Strain for Sample AM718-HM}
+		\label{fig:ss1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/ss2}
+		\caption{Engineering Stress vs. Engineering Strain for Sample AM718-HT1}
+		\label{fig:ss2}
+	\end{minipage}
+	
+	\vspace{0.5cm}
+	
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/ss3}
+		\caption{Engineering Stress vs. Engineering Strain for Sample AM718-HT2}
+		\label{fig:ss3}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/ss4}
+		\caption{Engineering Stress vs. Engineering Strain for Sample W718-HT2}
+		\label{fig:ss4}
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/tss1}
+		\caption{True Stress vs. True Plastic Strain for Sample AM718-HM}
+		\label{fig:tss1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/tss2}
+		\caption{True Stress vs. True Plastic Strain for Sample AM718-HT1}
+		\label{fig:tss2}
+	\end{minipage}
+	
+	\vspace{0.5cm}
+	
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/tss3}
+		\caption{True Stress vs. True Plastic Strain for Sample AM718-HT2}
+		\label{fig:tss3}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{media/tss4}
+		\caption{True Stress vs. True Plastic Strain for Sample W718-HT2}
+		\label{fig:tss4}
+	\end{minipage}
+\end{figure}
 
 \section{Discussion}
 
