@@ -35,18 +35,16 @@
 
 \section{Introduction}
 
-This reports serves to outline the effectiveness of implementing a metal additive manufacturing (MAM) protocol for high performance aerospace components for $AeroInc^{\text{\textregistered}}$ using Inconel 718. A statistical analysis was conducted on the tensile, hardness and toughness properties of various heat treatments performed on additive-manufactured and wrought Inconel 718, and recommendations will follow pertaining to its effectiveness as an aerospace material.
+This reports serves to outline the effectiveness of implementing a metal additive manufacturing (MAM) protocol for high performance aerospace components using Inconel 718, in service to $AeroInc^{\text{\textregistered}}$. 
 
+Presented below is a statistical analysis of the tensile, hardness and fracture toughness properties of heat-treated alloys of Inconel 718. These include both wrought Inconel 718 and that manufactured using Laser Powder Bed Fusion (LPBF) 3D Printing (i.e. additively manufactured). The aim is thereafter to assess the results that arise from this analysis, and to draw conclusions on the effectiveness of using additively-manufactured Inconel 718 for applications in aerospace components.
 
 
 \section{Methodology}
 
-The methodology used throughout this project, included protocol methods reported by the external consultancy by whom the tests were performed, is outlined below. All specific protocols used throughout the respective tests are available at the resource linked in the appendix (Section 7).
+For this analysis, data was obtained from an external consultancy who performed a series of tensile, hardness and fracture toughness tests on the samples of interest. Also received were reports of the testing protocols, explaining in detail how each test was performed. These specific protocols, as well as all the raw data received by the consultancy, are available at the resource linked in the appendix (Section 8).
 
-\subsection{Tensile Tests}
-Starting with the tensile tests for the material states, \textbf{ASTM E8/8M} was selected as the most appropriate standard to adhere to for testing. As per the outline from \textit{ASTM.org} \cite{ASTME8}, this standard governs the tension testing of metallic materials, and fits the consultants' protocol descriptions.
-
-For each sample, shown in the table below, 8 repeat tensile tests were performed.  From this point on, each sample will be referred to using just the first letter and last letters of their designations after the hyphen (i.e. ``\textit{W-HT2}" for ``\textit{WR718-HT2}").
+The four heat-treated samples of interest are given in the table below, and will be the focus of our analysis. From this point on, each sample will be referred to by just the first letter and last letters of their designations after the hyphen (i.e. ``\textit{W-HT2}" for ``\textit{WR718-HT2}").
 
 \begin{figure}[H]
 	\centering
@@ -55,96 +53,107 @@ For each sample, shown in the table below, 8 repeat tensile tests were performed
 	\label{fig:table}
 \end{figure}
 
+\subsection{Tensile Tests}
+Beginning with the tensile tests, \textbf{ASTM E8/8M} was selected as the most appropriate standard by which to adhere. As per the outline from \textit{ASTM.org} \cite{ASTME8}, this standard governs protocols for tension testing of metallic materials, and fits the consultants' reported descriptions.
+
+For each sample were performed eight repeat tensile tests, and for all of these tests, a protocol description was received from the consultancy.
+
 \subsubsection{Excluded Tests}
 
-Of these tests, several need be excluded, which we'll outline below. For \textit{A-HM}, \textbf{Test 7} is excluded as its strain rate of $10mm/min$ deviates from the otherwise-standard rate of $1mm/min$. Similarly, we exclude \textbf{Test 6} for \textit{A-HT1} and \textbf{Test 1} for \textit{W-HT2}, both for the same reason. 
+Of the 32 tests performed, several need be excluded, which we'll outline below. For \textit{A-HM}, \textbf{Test 7} is excluded as its strain rate of $10mm/min$ deviates from the otherwise-standard rate of $1mm/min$. Similarly, we exclude \textbf{Test 6} for \textit{A-HT1} and \textbf{Test 1} for \textit{W-HT2}, both for the same reason. 
 
-One test also included measurements made with a ruler rather than a caliper, and thus needs to be excluded. This is \textbf{Test 4} for \textit{A-HT1}.
+One test also included measurements made with a ruler rather than a vernier caliper, and thus needs to be excluded as well. This is \textbf{Test 4} for \textit{A-HT1}.
 
-In terms of issues preceding/during testing, we exclude \textit{A-HM} \textbf{Test 2} since the specimen had a rough surface on the gauge region prior to testing, and \textbf{Test 5} since the extensometer was not calibrated, and for the same reason, \textbf{Test 7} for \textit{A-HT2}. For \textit{A-HT1}, we exclude \textbf{Test 1} since the specimen was not clamped vertically between the grips during testing. For \textit{A-HT2}, we exclude \textbf{Test 4}, since the specimen fracture occurred outside of the gauge region, and \textbf{Test 7} of \textit{W-HT2} for the same reason. 
+In terms of other issues during or preceding testing, we exclude \textit{A-HM} \textbf{Test 2} since the specimen had a rough surface on the gauge region prior to testing. For the sample sample, we exclude \textbf{Test 5} since the extensometer was not calibrated, and for the same reason, \textbf{Test 7} for \textit{A-HT2}. 
+
+For \textit{A-HT1}, we exclude \textbf{Test 1} since the specimen was not clamped vertically between the grips during testing. For \textit{A-HT2}, we exclude \textbf{Test 4}, since the specimen fracture occurred outside of the gauge region, and \textbf{Test 7} of \textit{W-HT2} for the same reason. 
 
 Finally, two tests used a crosshead instead of a more-accurate extensometer to measure displacement, namely \textbf{Test 3} for \textit{A-HT2} and \textbf{Test 4} for \textit{W-HT2}. We exclude these as well.
 
 \subsubsection{Included Tests}
-With the exclusions above, we retain exactly 5 tests for each sample, and thus \textbf{we will use 5 repeat tests} for each sample in our analysis. This is done to utilize the fact that every sample had precisely 3 invalid tests, and 5 valid ones, giving us a large enough sample size to perform an accurate and precise analysis. To exclude any tests, such as only considering 4 for each sample, would be to needlessly remove valid data for no reason, and would generally decrease the quality of our analysis. As such, we use the maximum number of test runs available to us. This includes tests \textbf{1, 3, 4, 6, 8} for \textit{A-HM}, \textbf{2, 3, 5, 7, 8} for \textit{A-HT1}, \textbf{1, 2, 5, 6, 8} for \textit{A-HT2} and \textbf{2, 3, 5, 6, 7} for \textit{W-HT2}. 
+With the exclusions above, we retain exactly 5 tests for each sample, and thus \textbf{we will use 5 repeat tests} for each sample in our analysis. This is done to utilize the fact that every sample had precisely 3 invalid tests, and 5 valid ones, giving us a satisfactory sample size on which to perform an accurate and precise analysis. 
+
+To exclude any additional tests, such as only considering the first 4 for each sample, would be to needlessly remove valid data for no reason, and would generally decrease the quality of our analysis. As such, we use the maximum number of test runs available to us, which luckily happens to be uniform across our samples. 
+
+This includes \textbf{Tests 1, 3, 4, 6, 8} for \textit{A-HM}, \textbf{Tests 2, 3, 5, 7, 8} for \textit{A-HT1}, \textbf{Tests 1, 2, 5, 6, 8} for \textit{A-HT2} and \textbf{Tests 2, 3, 5, 6, 7} for \textit{W-HT2}. 
 
 
 \subsubsection{Statistical Decisions}
-To arrive at the results shown in the section below, a number of statistical decisions were made with regards to the reporting and representation of data. The most obvious of these is the test exclusions above, however with the tests narrowed down, several additional decisions were made that need be mentioned. Additional graphs, such as those aiding in calculations, are given in the appendix, so as to not clutter the other, more-important graphical results. 
+To arrive at the results shown in the section below, a number of statistical decisions were made with regards to the reporting and representation of data. The most obvious of these is the test exclusions above, however with the tests narrowed down, several additional decisions were made that need be mentioned. 
 
-All non-additional stress strain curves, specifically those which showcase the multiple tests runs, are shown in portrait orientations, so as to display any deviations in values which may have occurred within the runs. Landscape displays of these graphs would show the curves as a single thick line, making them less informative overall. 
+Additional graphs, such as those aiding in gradient or intercept inferences, are given in the appendix so as to not clutter the other, more-important graphical results.
 
-All repeat tests were treated as individual data sets, right up until the end, so as to obtain not only averages, but also measures of deviation amongst the tests themselves. The choice of calculating tensile properties for each graph, rather than averaging out a single stress strain curve, provides us with more information about the quality of the data itself.
+All stress/strain curves, specifically those which showcase the multiple tests runs, are shown in portrait orientations so as to show, distinctly, the runs themselves. Landscape displays of these graphs would show the curves as a single thick line, making them less informative and more difficult to read. 
 
-Finally, bar graphs were chosen to compare various properties of the heat treatments, and, in particular, yield strength and ultimate tensile strength were chosen to be displayed on the same graph, so as to show comparisons between values as well, i.e. for a single heat treatment. Box and whisker plots were chosen to represent the deviations present amongst the repeat tests, to provide an indication of data quality.
+All repeat tests were treated as individual data sets, right up until the end. This is to say tensile properties of the alloys, such as yield strength, were obtained first for each repeat test and only averaged thereafter, rather than averaging the curves themselves and obtaining a single value. This was done to preserve measures of deviation amongst the tests themselves, which provides us with more information about the quality of our data. Measures of central tendency and deviation were computed from these values, i.e. the repeat tests themselves.
+
+Finally, bar graphs were chosen to compare the average tensile properties of the heat treatments, and, in particular, yield strength and ultimate tensile strength were chosen to be displayed on the same graph. This decision was made so as to showcase the differences between these values as well, an indication of the strengthening ratios of our samples. Box and whisker plots were chosen to represent the deviations present amongst each repeat test set, to illustrate (a measure of) the quality of the data received.
 
 
 \subsection{Hardness Tests}
-Moving on to the hardness tests, \textbf{ASTME92} was selected as the most appropriate standard to adhere to, as it outlines test methods for Vickers Hardness of metallic materials. The tests performed on the Inconel 718 samples fits the standards given at \textit{ASTM.org} \cite{ASTME92}.
+Moving on to the hardness tests, \textbf{ASTME92} was selected as the most appropriate standard to adhere to, as it outlines test methods for Vickers Hardness of metallic materials. The hardness tests performed on our samples fits the standards given at \textit{ASTM.org} \cite{ASTME92}.
 
 \subsubsection{Excluded Tests}
-As before, tests with inconsistencies or errors are excluded from this analysis. For hardness tests, all repeats were consistent across the samples tested, meaning the same test(s) will be excluded from each heat treatment sample. As before, the test protocols are outlined at the resource linked in the appendix (Section 7).
+As before, tests with inconsistencies or errors were excluded from the analysis. Unlike with the tensile tests, the protocols for hardness test repeats were consistent across the samples tested, meaning the same test(s) will be excluded from each sample. As before, all test protocols are outlined at the resource linked in the appendix (Section 8).
 
-Clearly \textbf{Test 2} is invalid, since non-parallel specimens were used, in violation of the selected standard. Furthermore, \textbf{Test 3} featured indentation spacing of only $1 \times$ the diagonal length, and thus need also be excluded.
+Clearly \textbf{Test 2} is invalid, since non-parallel specimens were used, in violation of our selected standard. Furthermore, \textbf{Test 3} featured indentation spacing of only $1 \times$ the diagonal length, and thus need also be excluded.
 
-Test 4 featured only 15 repeats instead of the 30 repeats featured in the others, but should be included, since it is the only other valid test, with Test 1.
+The protocol outline for Test 4 states that only 15 test repeats were performed, instead of 30 like the others. Whether a misrepresentation was given in the protocol, or the data itself, some justification exists for excluding Test 4. That said, alongside Test 1, it is our only other valid dataset. As such, Test 4 was not excluded.
 
 \subsubsection{Included Tests}
-The included tests for hardness were \textbf{Tests 1 and 4}. In terms of including repeats, Test 4 shows 30 repeats, despite the protocol outline stating only 15 were performed. Since 30 repeats are, thus, given for each test, and only two valid tests remain, we decide to include \textbf{all 30 repeat tests}, as it gives us the most statistically-sound analysis, and no justification exists for excluding any of these readings.
+The included tests for hardness were \textbf{Tests 1 and 4}, each consisting of 30 repeats. Were we to only consider 15 tests for each, say to be consistent with the protocol description for Test 4 and maintain consistency between our tests, we would do so having no real reasoning behind which of the 15 tests we included. Furthermore, this would decrease the quality of our data, since we would be reducing the size of our sample. As such, for our analysis we decide to include \textbf{all 30 repeat tests}, and conclude that no real justification exists for excluding any of these readings, despite our aforementioned Test 4 inconsistencies. 
 
 \subsubsection{Statistical Decisions}
 The most meaningful statistical decisions made for the hardness tests include the test exclusions above, as well as the justification for including all 30 repeats. 
 
-Furthermore, the two remaining tests are then combined to give $60 HV$ readings, since there is no real justification exists for separating out the data into the two test sets. To do so would provide two hardness values for each sample under identical testing conditions, an all but pointless distinction.
+Furthermore, the decision was made to combine our two valid tests into a single set of $60 HV$ readings. No meaningful reason exists for separating out the data into the two test sets, since unlike with the tensile tests, each test consists of a set of repeat readings, and the material's state remain constant throughout the tests (which is to say we are not measuring a response). To segregate our data into two sets of 30 repeat readings would provide us with two hardness values for each sample under identical testing conditions, an all but pointless exercise.
 
-Measures of central tendency and variance computed for these values were computed across all 60 Vickers Hardness values, which again provides information about the reliability and precision of the data itself. 
+Measures of central tendency and deviation were computed across all 60 Vickers Hardness values, which again provides information about the reliability and precision of the data itself. 
 
-As before, bar graphs were selected as the most appropriate figures to compare hardness properties of the heat treatments, so as to visually represent differences among the samples for the 4 readings obtained. Box and whisker plots were again chosen to represent deviations amongst the repeat tests.
+As before, bar graphs were selected as the most appropriate figures to compare hardness properties of the heat treatments, so as to visually represent differences among the samples for the 4 readings obtained. Box and whisker plots were again chosen to represent deviations amongst the repeats.
 
 \subsection{Fracture Toughness Tests}
-Finally, for fracture toughness tests \textbf{ASTME8} was selected as the most appropriate standard to adhere to, describing standard test methods for linear-elastic plane-strain fracture toughness of metallic materials. The tests performed on the samples, specifically the reported breadth and width values, once again fit the standards given at \textit{ASTM.org} \cite{ASTME399}.
-
-\subsubsection{Excluded Tests}
-In terms of excluding invalid tests, all tests were performed with an identical protocol. In each case, compact specimens were pre-cracked to $a \approx 16mm$, and quasi-statically loaded to failure while measuring load and crack mouth opening displacementtests. As always, these protocols are given in more detail at the resource linked in the appendix (Section 7).
-
-Since no clear errors or inconsistencies occurred, \textbf{no tests} were excluded, and all tests performed for each sample should be included.
+Finally, for fracture toughness tests \textbf{ASTME399} was selected as the most appropriate standard, describing standard test methods for linear-elastic plane-strain fracture toughness of metallic materials. The tests performed on the samples, specifically due to the reported breadth and width values of the specimens, once again fit the standards given at \textit{ASTM.org} \cite{ASTME399}.
 
 \subsubsection{Included Tests}
-As mentioned, all tests were included for fracture toughness measurements. In terms of the repeats, which in this case are 10 tests performed on the samples, all should be included. However, \textbf{only 9 tests} were performed on sample $W-HT2$, and thus to include the $10th$ test on the 3 other heat-treatment would provide a measure of inconsistency. As such, \textbf{the $10th$ test}, where it existed, \textbf{was excluded from the samples}, so as to provide for the most consistent analysis, while sacrificing the least amount of quality test data. 
+In terms of excluding invalid tests, all tests were performed with an identical protocol. In each case, compact specimens were pre-cracked to $a \approx 16mm$, and quasi-statically loaded to failure while measuring load and crack mouth opening displacement. As always, these protocols are given in more detail at the resource linked in the appendix (Section 8).
+
+Since no clear errors or inconsistencies occurred, no basis exists for excluding a test based on protocols descriptions. However, looking at the data, only 9 tests were performed on sample $W-HT2$, and thus to include the $10th$ test on the 3 other samples would provide some amount of inconsistency. 
+
+As such, \textbf{9 tests were included} for each sample, and \textbf{the $10th$ test}, where it existed, was excluded. This ensures the data obtained from the samples is consistent enough for comparison, while sacrificing the least amount of quality test data. 
 
 \subsubsection{Statistical Decisions}
 The most important statistical decision made with regards to the fracture toughness data was the exclusion of the $10th$ test for samples $A-HM, A-HT1$ and $A-HT2$. This decision ultimately came down to the belief that ensuring a consistent number of tests were performed across all samples was of more importance than the minimal decrease in data quality that would arise from excluding a test set. 
 
 Measures of central tendency and variance were, like with hardness above, calculated across these repeats for each test. Since only one test set was given for fracture toughness, no considerations needed be made with regards to combining the data.
 
-As always, bar graphs were selected as the most appropriate figures to compare fracture properties of the heat treatments, since these, like hardness and various tensile properties, are visually distinguishable amongst heat treatments on these figures. In this way, they visually represent differences in fracture toughness among the samples for the 4 readings obtained. Box and whisker plots were again chosen to show the variance, since these showcase the extent to which values changed among tests.
-
+As always, bar graphs were selected as the most appropriate figures to compare fracture properties of the heat treatments, to visually represent differences in fracture toughness among the samples for the 4 readings obtained. Box and whisker plots were again chosen to show deviation among repeats, and showcase the extent to which measurements varied across testing.
 
 \section{Results}
 
 \subsection{Tensile Tests}
-For our tensile tests, we may obtain \textbf{engineering stress/strain curves} for each of our four samples, shown on the next page.
-
-Following this, we may, too, compute \textbf{true stress/strain curves} for the four samples, shown on the page following on (i.e. page 7). We utilize the two equations shown below:
+From the tensile test data, we obtain \textbf{engineering stress/strain curves} for each of our four samples, shown on page 7. Following this, we may, too, compute \textbf{true stress/strain curves} for our four samples, using the equations below.
 
 $$\sigma_{true} = \sigma_{eng}(1+\varepsilon_{eng})\quad \quad \quad \quad \varepsilon_{true} = \ln(1+\varepsilon_{eng}) $$
 
-Thereafter, we may begin arriving at several more results through computation. We begin by determining the \textbf{coefficients of strength and strain hardening}. Using the equation below, which applies to the region of \textbf{plastic deformation} for our graph, we may compute these values as, respectively, the intercept and gradient of a logarithmic true stress/strain curve (specific to the plastic region).
+These are shown on the page following on (i.e. page 8).
+
+Thereafter, we may arrive at several more results. We begin by determining the \textbf{coefficients of strength} and the \textbf{strain hardening exponents} for our samples. Using the equation below, which applies to the region of \textbf{plastic deformation} for our true stress/strain curves, we may compute these values. They are, respectively, the intercept and gradient of a logarithmic true stress/strain curve (specific to the plastic region).
 
 $$\ln \sigma_{true} = \ln K + n \ln {\varepsilon_t} $$
 
-We do so by plotting subfunctions of our true stress/strain curves for each sample, showing all repeat tests on a single log-log figure (in particular, $\ln-\ln$), and focused to the plastic region. These are shown in the appendix (Section 7, Figs. \ref{fig:ltss1}-\ref{fig:ltss4}), and we obtain our desired linearity and arrive at the following results for each sample. Note since each sample used 5 repeat tests, we obtain 5 values for both $K$ and $n$.
+To compute these values, we plot subfunctions of our true stress/strain curves for each sample, showing all repeat tests on a single log-log figure (in particular, $\ln-\ln$) focused to the plastic region. These are shown in the appendix (Section 8, Figs. \ref{fig:ltss1}-\ref{fig:ltss4}), and we obtain our desired linearity and arrive at the following results for each sample. Note since each sample used 5 repeat tests, we obtain 5 values for both $K$ and $n$.
 \vspace{-1em}
 
 \begin{table}[H]
 	\centering
 	\footnotesize
-	\caption{Strength Coefficient $K$ and Strain Hardening Exponent $n$ for Heat Treatment Samples}
+	\caption{Strength Coefficient $K$ and Strain Hardening Exponent $n$ for Inconel 718 Samples}
 	\vspace{0.5em}
 	\label{tab:hollomon}
 	\begin{tabular}{lcccccccccccc}
 		\hline
-		\textbf{Sample} & $K_1$ & $K_2$ & $K_3$ & $K_4$ & $K_5$ & $\bar{K}$ & $n_1$ & $n_2$ & $n_3$ & $n_4$ & $n_5$ & $\bar{n}$ \\
+		\textbf{Sample} & $K_1$ & $K_2$ & $K_3$ & $K_4$ & $K_5$ & $\overline{K}$ & $n_1$ & $n_2$ & $n_3$ & $n_4$ & $n_5$ & $\overline{n}$ \\
 		\hline
 		AM718-HM  & 1403.5 & 1450.3 & 1431.7 & 1444.5 & 1440.4 & \textbf{1434.1} & 0.2568 & 0.2619 & 0.2567 & 0.2599 & 0.2583 & \textbf{0.2587} \\
 		AM718-HT1 & 2324.6 & 2301.0 & 2329.7 & 2310.7 & 2312.1 & \textbf{2315.6} & 0.1926 & 0.1892 & 0.1936 & 0.1922 & 0.1935 & \textbf{0.1922} \\
@@ -161,14 +170,14 @@ We plot these average values on bar graphs below, followed by box and whisker pl
 	\begin{minipage}{0.45\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{media/bar}
-		\caption{Bar Graph showing Strength Coefficients, $K$, for Heat Treatment Samples}
+		\caption{Bar Graph showing Strength Coefficients, $K$, for Inconel 718 Samples}
 		\label{fig:bar}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.45\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{media/bar2}
-		\caption{Bar Graph showing Strain Hardening Exponents, $n$, for Heat Treatment Samples}
+		\caption{Bar Graph showing Strain Hardening Exponents, $n$, for Inconel 718 Samples}
 		\label{fig:bar2}
 	\end{minipage}
 \end{figure}
@@ -178,14 +187,14 @@ We plot these average values on bar graphs below, followed by box and whisker pl
 	\begin{minipage}{0.45\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{media/bw2}
-		\caption{Box and Whisker Plot showing $K$ values for each Heat-Treatment}
+		\caption{Box and Whisker Plot of $K$ values for Inconel 718 Samples}
 		\label{fig:bw2}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.45\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{media/bw1}
-		\caption{Box and Whisker Plot showing $n$ values for each Heat-Treatment}
+		\caption{Box and Whisker Plot of $n$ values for Inconel 718 Samples}
 		\label{fig:bw1}
 	\end{minipage}
 \end{figure}
@@ -198,7 +207,7 @@ We plot these average values on bar graphs below, followed by box and whisker pl
 	\label{tab:hollomon_stats}
 	\begin{tabular}{lcccc}
 		\hline
-		\textbf{Sample} & \textbf{Std. Dev. of $K$} & \textbf{Range of $K$} & \textbf{Std. Dev. of $n$} & \textbf{Range of $n$} \\
+		\textbf{Sample} & \textbf{Std. Dev. of $n$} & \textbf{Range of $n$} & \textbf{Std. Dev. of $K$} & \textbf{Range of $K$} \\
 		\hline
 		AM718-HM  & 0.00220 & 0.0052 & 18.39 & 46.80 \\
 		AM718-HT1 & 0.00179 & 0.0044 & 11.51 & 28.71 \\
@@ -275,14 +284,14 @@ We plot these average values on bar graphs below, followed by box and whisker pl
 	\end{minipage}
 \end{figure}
 
-Moving on, we may also compute the \textbf{yield strength, $\sigma_{ys}$, ultimate tensile strength, $\sigma_{UTS}$, elongation to failure, $\varepsilon_{fail}$} and \textbf{Young's modulus} for each heat treatment. To calculate these, we begin with our engineering stress/strain values for each sample, similar to before. Thereafter, we plot a subfunction of each of these curves, specifically limited to the elastic region, so as to compute \textbf{elastic} (i.e. Young's) \textbf{modulus} and the yield strength, which are, respectively, the gradient and $y_{max}$ (of the elastic region). These plots are given in the appendix, as with those prior (Section 7, Figs. \ref{fig:ess1}-\ref{fig:ess4}).
+Moving on, we may also compute the \textbf{yield strength, $\sigma_{ys}$, ultimate tensile strength, $\sigma_{UTS}$, elongation to failure, $\varepsilon_{fail}$} and \textbf{Young's modulus} for each heat treatment. To calculate these, we begin with our engineering stress/strain values for each sample, similar to before. Thereafter, we plot a subfunction of each of these curves, specifically limited to the elastic region, so as to compute \textbf{elastic} (i.e. Young's) \textbf{modulus} and \textbf{yield strength}, which are, respectively, the gradient and $y_{max}$ (of the elastic region). These plots are given in the appendix, as before (Section 7, Figs. \ref{fig:ess1}-\ref{fig:ess4}).
 
-The other values are more straightforward, with $\sigma_{UTS}$ and $\varepsilon_{fail}$ given by our $y$ and $x$ maxima, respectively (of the entire stress/strain curve). The final average values are given in the table below, as well as the measures of variance for each value, as before.
+The other values are more straightforward, with $\sigma_{UTS}$ and $\varepsilon_{fail}$ given by our $y$ and $x$ maxima, respectively (of the entire stress/strain curve). The final average values are given in the table below, as well as the measures of variance for each value.
 
 \begin{table}[H]
 	\centering
 	\footnotesize
-	\caption{Table showing a statistical summary of Mechanical Properties for each Heat Treatment}
+	\caption{Table showing Mechanical Properties for Inconel 718 Samples}
 	\vspace{0.5em}
 	\label{tab:mechstats}
 	\begin{tabular}{llcccc}
@@ -317,7 +326,7 @@ We represent the average values using the bar graphs below, allowing us to visua
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/ysuts}
-	\caption{Bar Graph showing Yield and Ultimate Tensile Strength Values for Heat Treatment Samples}
+	\caption{Bar Graph showing Yield and Ultimate Tensile Strength Values for Inconel 718 Samples}
 	\label{fig:ysuts}
 \end{figure}
 
@@ -326,14 +335,14 @@ We represent the average values using the bar graphs below, allowing us to visua
 	\begin{minipage}{0.48\linewidth}
 		\centering
 		\includegraphics[width=0.8\linewidth]{media/em}
-		\caption{Bar Graph showing Elastic Moduli for Heat Treatment Samples}
+		\caption{Bar Graph showing Elastic Moduli for Inconel 718 Samples}
 		\label{fig:em}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.48\linewidth}
 		\centering
 		\includegraphics[width=0.8\linewidth]{media/ebreak}
-		\caption{Bar Graph showing Elongation at Break for Heat Treatment Samples}
+		\caption{Bar Graph showing Elongation at Break for Inconel 718 Samples}
 		\label{fig:ebreak}
 	\end{minipage}
 \end{figure}
@@ -344,31 +353,33 @@ We represent the average values using the bar graphs below, allowing us to visua
 	\begin{minipage}{0.48\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{media/bw3}
-		\caption{Box and Whisker Plot showing $E$ values for each Heat-Treatment}
+		\caption{Box and Whisker Plot showing $E$ values for Inconel 718 Samples}
 		\label{fig:bw3}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.48\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{media/bw4}
-		\caption{Box and Whisker Plot showing $\sigma_{ys}$ values for each Heat-Treatment}
+		\caption{Box and Whisker Plot showing $\sigma_{ys}$ values for Inconel 718 Samples}
 		\label{fig:bw4}
 	\end{minipage}
 \end{figure}
+
+\vspace{-1em}
 
 \begin{figure}[H]
 	\centering
 	\begin{minipage}{0.48\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{media/bw5}
-		\caption{Box and Whisker Plot showing $\sigma_{UTS}$ values for each Heat-Treatment}
+		\caption{Box and Whisker Plot showing $\sigma_{UTS}$ values for Inconel 718 Samples}
 		\label{fig:bw5}
 	\end{minipage}
 	\hfill
 	\begin{minipage}{0.48\linewidth}
 		\centering
 		\includegraphics[width=\linewidth]{media/bw6}
-		\caption{Box and Whisker Plot showing $\varepsilon_{break}$ values for each Heat-Treatment}
+		\caption{Box and Whisker Plot showing $\varepsilon_{fail}$ values for Inconel 718 Samples}
 		\label{fig:bw6}
 	\end{minipage}
 \end{figure}
@@ -399,7 +410,7 @@ For the Vickers Hardness values, the 60 Vickers Hardness values obtained across 
 		\hline
 		\textbf{Statistic} & \textbf{AM718-HM} & \textbf{AM718-HT1} & \textbf{AM718-HT2} & \textbf{W718-HT2} \\
 		\hline
-		Mean (HV)     & 260.12 & 370.18 & 364.37 & 359.30 \\
+		Mean (HV)     & \textbf{260.12} & \textbf{370.18} & \textbf{364.37} & \textbf{359.30} \\
 		Std. Dev.     & 4.07  & 4.83  & 4.57  & 5.18  \\
 		Range         & 21.40  & 18.90  & 21.10  & 22.40  \\
 		\hline
@@ -411,14 +422,14 @@ We represent these averages using the bar graph below, as before, followed by a 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/hv}
-	\caption{Bar Graph showing Vickers Hardness values for each Heat Treatment Sample}
+	\caption{Bar Graph showing Vickers Hardness values for Inconel 718 Samples}
 	\label{fig:hv}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{media/bw7}
-	\caption{Box and Whisker Plot showing $HV$ values for each Heat-Treatment}
+	\includegraphics[width=0.6\linewidth]{media/bw7}
+	\caption{Box and Whisker Plot showing $HV$ values for Inconel 718 Samples}
 	\label{fig:bw7}
 \end{figure}
 
@@ -426,7 +437,7 @@ We represent these averages using the bar graph below, as before, followed by a 
 
 \subsection{Fracture Toughness Tests}
 
-For the Fracture Toughness values, the 9 $K_{IC}$ values obtained across the tests yielded the table below, similarly to the above.
+For our fracture toughness, $K_{IC}$, the 9 repeat values for each of the tests give us the table below, similarly to the above.
 
 \begin{table}[H]
 	\centering
@@ -437,7 +448,7 @@ For the Fracture Toughness values, the 9 $K_{IC}$ values obtained across the tes
 		\hline
 		\textbf{Statistic} & \textbf{AM718-HM} & \textbf{AM718-HT1} & \textbf{AM718-HT2} & \textbf{W718-HT2} \\
 		\hline
-		Mean (MPa$\cdot$m$^{1/2}$) & 159.92 & 130.42 & 120.77 & 125.39 \\
+		Mean ($MPa \sqrt{m}$) & \textbf{159.92} & \textbf{130.42} & \textbf{120.77} & \textbf{125.39} \\
 		Std. Dev.                  & 0.78  & 1.80  & 1.59  & 2.05  \\
 		Range                      & 2.34 & 6.03 & 4.50 & 7.21 \\
 		\hline
@@ -449,23 +460,19 @@ We represent these figures using the bar graph and box and whisker plots below, 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/kic}
-	\caption{Bar Graph showing $K_{IC}$ values for each Heat Treatment Sample}
+	\caption{Bar Graph showing $K_{IC}$ values for Inconel 718 Samples}
 	\label{fig:kic}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/bw8}
-	\caption{Box and Whisker Plot showing $K_{IC}$ values for each Heat-Treatment}
+	\caption{Box and Whisker Plot showing $K_{IC}$ values for Inconel 718 Samples}
 	\label{fig:bw8}
 \end{figure}
 
 
 \section{Discussion}
-
-- Formulate a comparative discussion around the observed mechanical properties for each of
-the heat treatments. Carefully consider which properties are important in this discussion.
-[5]
 
 The results above allow for a conclusive discussion on the effectiveness of each of the samples as a candidate alloy for aerospace applications. To aid in this discussion, note the following description of the meanings behind the acronyms used for each of the samples above. They will herewith be referred to in this manner (e.g. ``wrought", ``heat-treated", etc.), for simplicity.
 
@@ -477,7 +484,7 @@ The results above allow for a conclusive discussion on the effectiveness of each
 	\item \textbf{HT2}: Heat Treatment 2 (higher solution anneal at 1093°C)
 \end{itemize}
 
-Each of the four samples will be compared with one another, governed by the table below which outlines $AeroInc^{\text{\textregistered}}$'s required mechanical properties for aerospace components.
+Each of the four samples will be compared with one another and to the table below, which outlines $AeroInc^{\text{\textregistered}}$'s required mechanical properties for aerospace components.
 
 \begin{figure}[H]
 	\centering
@@ -486,41 +493,40 @@ Each of the four samples will be compared with one another, governed by the tabl
 	\label{fig:table2}
 \end{figure}
 
-We will compare these 7 properties among our four samples in the subsections below. An 8th section will then be used to incorporate other important data obtained, which is absent from the table above (e.g. Strengthening Coefficient, $K$).
+We will compare these seven properties among our four samples in the subsections below. An eighth section will then be used to incorporate other important data which was obtained but is absent from the table above (e.g. Strengthening Coefficient, $K$).
 
 \subsection{Young's Modulus}
-Of the four samples, the wrought and homogenized only alloys fall short of the requirement for $E$ for aerospace components, and are, in fact, immediately ineligible. The two heat treated samples, $AM718-HT1$ and $AM718-HT2$ both exceed the minumum modulus, though the former does so by a more reassuring margin of $16GPa$, compared to the latter's $5$.
+Of the four samples, the \textbf{wrought} and \textbf{homogenized-only} alloys fall short of the requirement for Young's Modulus. As such, these two alloys are immediately ineligible for usage by $AeroInc^{\text{\textregistered}}$. The \textbf{two heat treated samples}, AM718-HT1 and AM718-HT2 both exceed the minumum modulus, and the former does so by a more reassuring margin of $16GPa$, compared to the latter's $5GPa$.
 
 \subsection{Yield and Ultimate Tensile Stress}
-In terms of yield stress (since yield stress was clear for all samples, the $0.2\%$ offset method for proof stress was not required), we note that all but the homogenized-only sample exceed the requirement. Again, $AM718-HT1$ leads with the highest value, followed by the other heat treatment and then the wrought alloy.
+In terms of yield stress, since yield stress was clear for all samples, the $0.2\%$ offset method for proof stress was not required. We note that \textbf{all but the homogenized-only sample} exceed the requirement. Again, AM718-HT1 leads with the highest value, followed by the other heat treatment and then the wrought alloy.
 
-The results for UTS are very closely mirrored, with all but $AM718-HM$ passing the requirement, and the same order as before (e.g. heat treatments 1 then 2 then wrought).
+The results for UTS are very closely mirrored, with \textbf{all but AM718-HM passing the requirement}, and the same order as before (e.g. heat treatments 1 then 2 then wrought).
 
 \subsection{Elongation at Break}
-All samples posses elongations at break of larger than 19\%, however the wrought alloy does so by the smallest margin. The homogenized-only sample has an elongation at break of around two-thirds, far greater than any other sample. Thereafter, the two heat treatments both fall in the low 20\% range, with heat treatment 2 surpassing 1 in this case.
+\textbf{All samples} posses elongations at break of larger than 19\%, however the wrought alloy does so by the smallest margin. The homogenized-only sample has an elongation at break of around two-thirds, far greater than any other sample. Thereafter, the two heat treatments both fall in the low 20\% range, with heat treatment 2 surpassing 1 in this category.
 
 \subsection{Strain Hardening Ratio}
-The strain hardening ratio (i.e. the ratio of ultimate tensile to yield stress) for all additive-manufactured samples surpasses the requirement of 1.5, and the wrought sample falls just short at a ratio of $1.4$. 
+The strain hardening ratio (i.e. the ratio of ultimate tensile to yield stress) for \textbf{all additively-manufactured samples surpasses the requirement} of $1.5$, and the \textbf{wrought sample falls just short} at a ratio of $1.4$. 
 
 \subsection{Vickers Hardness}
-Unfortunately, none of the samples pass the requirement for a Vickers Hardness of 400 HV or greater. The homogenized-only sample falls way short at $260$ HV, and the other 3 samples sit in the mid-300s range. 
+Unfortunately, \textbf{none of the samples pass the requirement} for a Vickers Hardness of $400$ HV or greater. The homogenized-only sample falls way short at $260$ HV, and the other 3 samples sit in the mid-300s range, with AM718-HT1, then AM718-HT2, and then the wrought alloy as our descending order of Vickers Hardness.
 
 
 \subsection{Fracture Toughness}
-All samples pass the fracture toughness requirement, with the homogenized-only sample far surpassing the others at $160 MPa \sqrt{m}$. The other three samples sit at $120, 125$ and $130$ for the $HT2$, wrought and $HT1$, respectively. The closest case is $HT2$, which just passes the requirement by a margin of around $770KPa$.
+All samples pass the fracture toughness requirement, with the homogenized-only sample outshining the others at $160 MPa \sqrt{m}$. The other three samples sit at $120MPa \sqrt{m}, 125MPa \sqrt{m}$ and $130MPa \sqrt{m}$ for the $HT2$, wrought and $HT1$, alloys respectively. The closest case is $HT2$, which just passes the requirement by a margin of around $770kPa \sqrt{m}$.
 
 
 \subsection{Additional Properties}
-The only properties excluded in the discussion above are the strength coefficient $K$ and strain hardening exponent, $n$, which provides measures of the strength and capacity to work harden before necking. The order of samples for in terms of $K$ are $HT1, HT2$, wrought and homogenized-only, and in terms of $n$ are homogenized-only, $HT1, HT2$ and wrought.
+The only properties excluded in the discussion above are the strength coefficient $K$ and strain hardening exponent, $n$, which provide measures of the strength and capacity to work harden before necking, respectively. The order of the samples in terms of $K$ are $HT1, HT2$, wrought and homogenized-only, and in terms of $n$ are homogenized-only, $HT1, HT2$ and wrought.
 
-Since no benchmark exists against which to compare these, all we can say is that the results above strengthen the homogenized-only and $HT1$ alloys' cases for aerospace suitability. We will mostly consider this as an endorsement of the heat treated alloys ability, since the homogenized alloy already fails several other categories.
+Since no benchmark exists against which to compare these, all we can say is that the results above strengthen the homogenized-only and $HT1$ alloys' cases for aerospace suitability. We will mostly consider this as an endorsement of the $HT1$ alloy's ability, since the homogenized alloy already fails several other categories.
 
 
 \subsection{Statistical Considerations}
-The arguments made in the sections above assume that the averages obtained throughout this analysis are representative of the alloys' properties. We assume this to be the case, since consistently low values of standard deviation were found across all measured properties.
+The arguments made in the sections above assume that the averages obtained throughout this analysis are representative of the alloys' properties. We assume this to be the case, since consistently low values of standard deviation were found throughout our analysis. \textbf{No clear outliers of signals of statistical weakness were found}.
 
-The sample which showed the most deviation, however, was $AM718-HT2$, however not enough to raise any concern about the data's validity. All samples showed insignificant standard deviations and ranges, relative to the measured values themselves.
-
+The sample which showed the most deviation was AM718-HT2, however not enough to raise any concern about the data's validity. All samples showed insignificant standard deviations and ranges, relative to the measured values themselves.
 
 \section{Recommendations}
 
@@ -528,7 +534,7 @@ The overall performance of the alloys, as in the discussion above, is summarised
 
 \begin{table}[H]
 	\centering
-	\caption{Summary of Aerospace Mechanical Property Requirements for each sample}
+	\caption{Summary of Aerospace Mechanical Property Requirements for each Inconel 718 sample}
 	\vspace{0.5em}
 	\label{tab:passfail}
 	\begin{tabular}{lcccc}
@@ -536,10 +542,10 @@ The overall performance of the alloys, as in the discussion above, is summarised
 		\textbf{Property} & \textbf{AM718-HM} & \textbf{AM718-HT1} & \textbf{AM718-HT2} & \textbf{W718-HT2} \\
 		\hline
 		$E \geq 230$ GPa              & $\times$ & $\checkmark$ (1st) & $\checkmark$ (2nd) & $\times$ \\
-		$\sigma_{ys} \geq 770$ MPa    & $\times$ & $\checkmark$ (1st) & $\checkmark$ (2nd) & $\times$ \\
+		$\sigma_{ys} \geq 770$ MPa    & $\times$ & $\checkmark$ (1st) & $\checkmark$ (2nd) & $\checkmark$ (3rd) \\
 		$\sigma_{UTS} \geq 1050$ MPa  & $\times$ & $\checkmark$ (1st) & $\checkmark$ (2nd) & $\checkmark$ (3rd) \\
 		$\varepsilon_{fail} \geq 19\%$& $\checkmark$ (1st) & $\checkmark$ (3rd) & $\checkmark$ (2nd) & $\checkmark$ (4th) \\
-		SHR $\geq 1.5$                & $\checkmark$ (1st) & $\checkmark$ (2nd) & $\checkmark$ (3rd) & $\times$ \\
+		SHR $\geq 1.5$                & $\checkmark$ (tied) & $\checkmark$ (tied) & $\checkmark$ (tied) & $\times$ \\
 		HV $\geq 400$                 & $\times$ & $\times$ & $\times$ & $\times$ \\
 		$K_{IC} \geq 120$ MPa$\cdot$m$^{1/2}$ & $\checkmark$ (1st) & $\checkmark$ (2nd) & $\checkmark$ (4th) & $\checkmark$ (3rd) \\
 		\hline
@@ -550,15 +556,15 @@ The overall performance of the alloys, as in the discussion above, is summarised
 
 Based on this data, of the four samples, the best suited alloy for aerospace application would be \textbf{AM718-HT1}. It consistently outperformed the other alloys across almost all tensile properties, and passed all but one of the requirements for an aerospace component. 
 
-In general, the additive-manufactured alloys outperformed wrought Inconel 718 across property categories, including tensile, hardness and fracture toughness properties. While this does not, in itself, qualify Inconel 718 as a candidate alloy, it does show that alloys like Inconel 718 seem to perform far better for aerospace-requirement property categories, such as these, than wrought alloys. 
+In general, the additively-manufactured alloys outperformed wrought Inconel 718 across almost all categories. While this does not, in itself, qualify Inconel 718 as a candidate alloy, it does show that \textbf{additively-manufactured alloys using metals like Inconel 718 seem to perform far better} in selected mechanical properties categories \textbf{than wrought alloys}.
 
-That said, since all alloys failed the hardness criterion, at the present, \textbf{no recommendations can be made for any of the alloys in this report to be used in aerospace components for $AeroInc^{\text{\textregistered}}$}. Failing any of the categories need be regarded as an automatic disqualification, due to the strict standards upheld in the aerospace industry.
+That said, since all alloys failed the hardness criterion, at present \textbf{no recommendations can be made for any of the alloys in this report to be used in aerospace components for $AeroInc^{\text{\textregistered}}$}. Failing any of the categories need be regarded as an automatic disqualification, due to the strict standards upheld in the aerospace industry.
 
-While this result is somewhat unfortunate, one can wholly be convinced of the utility of additive manufacturing on Inconel 718, since \textbf{heat treated additive-manufactured alloys consistently outperformed the wrought sample}. If through some means, such as dispersion hardening, the Vickers hardness of \textbf{AM718-HT1} could be increased past $400 HV$, it would more than likely become a suitable material for use by $AeroInc^{\text{\textregistered}}$ and similar companies. 
+While this result is somewhat unfortunate, one can wholly be convinced of the utility of additively manufacturing metals like Inconel 718, since \textbf{heat treated additively-manufactured alloys consistently outperformed the wrought sample}. If through some means, such as dispersion hardening, the Vickers hardness of \textbf{AM718-HT1} could be increased past $400 HV$, it would more than likely become a suitable component material for use by $AeroInc^{\text{\textregistered}}$ and similar companies. 
 
 \section{Conclusions}
 
-It may be concluded that additive manufacturing is a viable method for preparing candidate alloys, specifically Inconel 718, for applications in aerospace, though at the moment, Inconel 718 falls just short of qualifying due to insufficient hardness. Additive-manufactured alloys appear to outperform wrought across a number of categories, leading one to believe that with suitable metal powders, Laser Powder Bed Fusion (LBPF) 3D printing appears a feasible method for the manufacturing of aerospace components.
+It may be concluded that additive manufacturing is a viable method for preparing candidate alloys, specifically Inconel 718, for applications in aerospace, though at the moment, Inconel 718 falls just short of qualifying due to insufficient hardness. Additively-manufactured alloys appear to outperform wrought across a number of categories, leading one to believe that with suitable metal powders, Laser Powder Bed Fusion (LBPF) 3D printing appears a feasible method for the manufacturing of aerospace components.
 
 \section{References}
 
@@ -566,7 +572,7 @@ It may be concluded that additive manufacturing is a viable method for preparing
 
 \section{Appendix}
 
-All data pertaining to the heat-treatments and mechanical tests, performed by the external consultancy, is available \href{https://spitfyre347.github.io/MEC4135Z_Capstone/Master_Data.csv}{here} in CSV format, hosted on a \textit{Github Pages} site. This is the raw data as received from the consultants, collated into a single PDF file. 
+All data pertaining to the heat-treatments and mechanical tests, performed by the external consultancy, is available \href{https://spitfyre347.github.io/MEC4135Z_Capstone/Master_Data.csv}{here} in CSV format, hosted on a \textit{Github Pages} site. This is the raw data as received from the consultants, collated into a single file. 
 
 All protocols outlined by the consultancy used to obtain the results above are also available, on the same site, at the web address \href{https://spitfyre347.github.io/MEC4135Z_Capstone/Test_Protocols.pdf}{here}. These have been similarly collated into a single PDF.
 
